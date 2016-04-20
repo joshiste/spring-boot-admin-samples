@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+management:
+  context-path: /mgmt
+  
+security:
+  user:
+    name: user
+    password: password
+
+spring:
+  boot:
+    admin:
+      url: http://localhost:8080
+      auth:
+        username: mgmt
+        password: drowssap
+  application:
+    name: admin-server
+    
+logging:
+  level:
+    org.springframework.security: INFO
