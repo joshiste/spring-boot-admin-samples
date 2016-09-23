@@ -22,3 +22,5 @@ spring:
 logging:
   level:
     org.springframework.security: INFO
+
+zuul.sensitiveHeaders:
