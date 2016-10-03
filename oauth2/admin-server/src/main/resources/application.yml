@@ -22,7 +22,10 @@ security:
       clientSecret: acmesecret
     resource:
       userInfoUri: http://localhost:8081/uaa/user
-      
+
+zuul:
+  sensitiveHeaders:
+
 logging:
   level:
     org.springframework.security: INFO

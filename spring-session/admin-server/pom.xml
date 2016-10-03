@@ -7,26 +7,11 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.2.RELEASE</version>
+        <groupId>com.github.joshiste.spring-boot-admin-samples</groupId>
+        <artifactId>sample-session</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>..</relativePath>
 	</parent>
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.8</java.version>
-		<spring-boot-admin.version>1.3.2</spring-boot-admin.version>
-	</properties>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-parent</artifactId>
-				<version>1.3.2.RELEASE</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 	<dependencies>
 		<dependency>
 			<groupId>de.codecentric</groupId>
@@ -66,36 +51,4 @@
 			</plugin>
 		</plugins>
 	</build>
-    <repositories>
-        <repository>
-            <id>spring-release</id>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>http://repo.spring.io/release</url>
-        </repository>
-        <repository>
-            <id>spring-milestone</id>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>http://repo.spring.io/milestone</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>spring-release</id>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>http://repo.spring.io/release</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>spring-milestone</id>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>http://repo.spring.io/milestone</url>
-        </pluginRepository>
-    </pluginRepositories>
 </project>
