@@ -1,0 +1,24 @@
+---
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+        username: "tech-user-register"       #These two are needed so that the client
+        password: "secret"                   #can register at the protected server api
+        instance:
+          metadata:
+            user.name: "tech-user-actuator"  #These two are needed so that the server
+            user.password: "mystery"         #can access the protected client endpoints
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+
