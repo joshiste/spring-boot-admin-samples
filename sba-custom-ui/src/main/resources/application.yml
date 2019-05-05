@@ -1,0 +1,28 @@
+---
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+---
+# Use this profile if you want to develop the ui in watch mode
+spring:
+  profiles: dev
+  boot:
+    admin:
+      ui:
+        cache:
+          no-cache: true
+        cache-templates: false
+        extension-resource-locations:  file:@project.basedir@/target/dist/
